@@ -16,6 +16,7 @@ dependencies:
   - torchaudio
   - spotipy
   - flask
+  - flask-cors
   - tqdm
   - requests
   - requests-oauthlib
