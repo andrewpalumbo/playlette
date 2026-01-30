@@ -1,0 +1,29 @@
+[run]
+# Measure coverage for these packages
+source = app, models
+
+# Omit these files/patterns from coverage
+omit = 
+    */tests/*
+    */test_*.py
+    models/train_model.py
+    scripts/*
+    setup.py
+    */site-packages/*
+
+[report]
+# Fail if coverage is below this threshold
+fail_under = 100
+
+# Show missing lines in report
+show_missing = True
+
+# Exclude lines from coverage (e.g., debugging code)
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise AssertionError
+    raise NotImplementedError
+    if __name__ == "__main__":
+    if TYPE_CHECKING:
+    @abstract
